@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App{
+    @apply  overflow-hidden  bg-neutral-100;
+}
+.MainAdmin{
+    @apply w-[1440px] h-[1086px] relative bg-neutral-100 m-auto;
+}

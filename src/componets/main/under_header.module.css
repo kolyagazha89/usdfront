@@ -1,0 +1,52 @@
+.under_header {
+  @apply w-full h-[776px] relative bg-white bg-opacity-0 border-b border-stone-50 border-opacity-30 mx-auto;
+}
+.under_header img {
+  @apply w-[471px] h-[680px] left-[109px] top-[24px] absolute rounded-[20px] animate-shadow-img transform-gpu;
+}
+@keyframes shadow-img {
+  0% {
+    box-shadow: 0 0 10px rgba(234, 129, 129, 0.2), 0 0 20px rgba(234, 129, 129, 0.2), 0 0 30px rgba(234, 129, 129, 0.2), 0 0 40px rgba(234, 129, 129, 0.2), 0 0 50px rgba(234, 129, 129, 0.2);
+    transform: scale(1.01);
+  }
+  50% {
+    @apply shadow-none;
+    transform: scale(1);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(234, 129, 129, 0.2), 0 0 20px rgba(234, 129, 129, 0.2), 0 0 30px rgba(234, 129, 129, 0.2), 0 0 40px rgba(234, 129, 129, 0.2), 0 0 50px rgba(234, 129, 129, 0.2);
+    transform: scale(1.01);
+  }
+}
+.under_header .btn_reg {
+  @apply transition w-[300px] h-[60px] px-[26px] py-[5px] left-[651px] top-[380px] absolute bg-black rounded-[30px] border border-white justify-center items-center gap-2.5 inline-flex;
+}
+.under_header .btn_reg .text_btn {
+  @apply text-center  transition text-white text-xl font-["Roboto"] font-normal;
+}
+.under_header .btn_reg:hover {
+  @apply border-red-500 transition duration-500;
+}
+.under_header .btn_reg:hover .text_btn {
+  @apply text-red-500 transition duration-500 scale-110;
+}
+.under_header .title_under {
+  @apply w-[735px] left-[642px] top-[56px] absolute text-white text-[80px] font-["Roboto"] leading-[94px] font-bold animate-shadow-text transform-gpu;
+}
+@keyframes shadow-text {
+  0% {
+    text-shadow: 0 0 5px rgba(234, 129, 129, 0.2), 0 0 10px rgba(234, 129, 129, 0.2), 0 0 15px rgba(234, 129, 129, 0.2), 0 0 20px rgba(234, 129, 129, 0.2), 0 0 25px rgba(234, 129, 129, 0.2);
+  }
+  50% {
+    text-shadow: none;
+    color: white;
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(234, 129, 129, 0.2), 0 0 10px rgba(234, 129, 129, 0.2), 0 0 15px rgba(234, 129, 129, 0.2), 0 0 20px rgba(234, 129, 129, 0.2), 0 0 25px rgba(234, 129, 129, 0.2);
+  }
+}
+.under_header .desc_under {
+  @apply w-[580px] left-[651px] top-[250px] absolute text-white text-lg font-normal font-["Roboto"] leading-loose;
+}
+
+/*# sourceMappingURL=under_header.module.css.map */

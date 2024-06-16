@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.429b717e.css",
+    "main.js": "/static/js/main.90a21d1d.js",
+    "static/media/calendar.jpg": "/static/media/calendar.efbb8323cba092ddd2fc.jpg",
+    "static/media/afisha.jpg": "/static/media/afisha.651c4575ff13b4e381b0.jpg",
+    "static/media/news_partner.jpg": "/static/media/news_partner.503a5e2718da3c7e697f.jpg",
+    "static/media/logopart.jpg": "/static/media/logopart.fb40f9c24a2e43fcb8f0.jpg",
+    "static/media/news.jpg": "/static/media/news.afa566e821f46a20775a.jpg",
+    "static/media/logo_usd.jpg": "/static/media/logo_usd.6c107cf6308ff21cc90f.jpg",
+    "static/media/ava.jpg": "/static/media/ava.cb6e08938171dd706865.jpg",
+    "static/media/logo_vk.jpg": "/static/media/logo_vk.57b0760e26c7cac4ed05.jpg",
+    "index.html": "/index.html",
+    "main.429b717e.css.map": "/static/css/main.429b717e.css.map",
+    "main.90a21d1d.js.map": "/static/js/main.90a21d1d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.429b717e.css",
+    "static/js/main.90a21d1d.js"
+  ]
+}

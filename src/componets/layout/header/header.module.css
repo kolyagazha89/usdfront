@@ -1,0 +1,38 @@
+.header {
+  @apply w-full h-20 py-[31px] border-b border-stone-50 border-opacity-30 justify-between items-center inline-flex mx-auto bg-black;
+}
+
+.first_header {
+  @apply py-[7px] justify-start items-center gap-5 flex;
+}
+
+.link_text {
+  @apply text-white text-base font-normal font-["Roboto"] transition;
+}
+
+.link_text:hover {
+  @apply text-red-500 transition duration-300 ease-in-out;
+}
+
+.logo_header {
+  @apply justify-start items-center gap-2.5 flex;
+}
+.logo_header img {
+  @apply w-[97px] h-fit;
+}
+
+.link_header {
+  @apply justify-start items-center gap-10 flex;
+}
+
+.second_header {
+  @apply py-2.5 justify-end items-center gap-[50px] flex;
+}
+.second_header .vk_logo {
+  @apply w-[29px] h-7 bg-white bg-opacity-0 justify-center items-center flex;
+}
+.second_header .vk_logo img {
+  @apply w-[29px] h-fit;
+}
+
+/*# sourceMappingURL=header.module.css.map */

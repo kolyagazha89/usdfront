@@ -1,0 +1,24 @@
+.main_cont{
+  @apply w-[1596px] h-[910px] flex-col justify-start items-start gap-4 inline-flex;
+  .cont1{
+    @apply self-stretch h-[118px] px-[250px] flex-col justify-start items-start gap-2.5 flex;
+    .cont_list{
+      @apply self-stretch text-center text-white text-5xl font-['Sora'] leading-[72px]  font-semibold ;
+    }
+    .cont_name{
+      @apply self-stretch text-center text-zinc-500 text-2xl font-normal font-['Sora'] leading-9;
+    }
+  }
+  .cont2{
+    @apply self-stretch justify-center items-center gap-5 inline-flex;
+    .cont_info{
+      @apply w-[383px] p-5 rounded-[20px] border border-stone-900 flex-col justify-center items-center gap-2.5 inline-flex;
+      .cont_info_zag{
+        @apply text-center text-white text-2xl font-semibold font-['Sora'] leading-9;
+      }
+      .cont_info_list{
+        @apply text-center text-white text-xl font-light font-['Sora'] underline leading-[30px] tracking-wide;
+      }
+    }
+  }
+}

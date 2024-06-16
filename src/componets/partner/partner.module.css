@@ -1,0 +1,35 @@
+.main_cont {
+  @apply w-[1596px] h-fit flex-col justify-start items-start gap-20 inline-flex px-[135px] my-5;
+}
+.main_cont .main_cont1 {
+  @apply self-stretch justify-start items-center inline-flex;
+}
+.main_cont .main_cont1 .main_cont2 {
+  @apply grow shrink basis-0 py-2.5 flex-col justify-start items-start gap-[50px] inline-flex;
+}
+.main_cont .main_cont1 .main_cont2 .part_shadow {
+  @apply self-stretch p-5 rounded-[20px] border border-[#1F1F1F] justify-center items-center gap-[20px] inline-flex;
+}
+.main_cont .main_cont1 .main_cont2 .part_shadow img {
+  @apply w-[310px] h-[200px] rounded-[20px] p-2.5;
+}
+.main_cont .main_cont1 .main_cont2 .part_shadow .main_cont_info {
+  @apply grow shrink basis-0  flex-col justify-start items-start gap-2.5 inline-flex;
+}
+.main_cont .main_cont1 .main_cont2 .part_shadow .main_cont_info .main_cont_title {
+  @apply self-stretch justify-start items-center gap-6 inline-flex;
+}
+.main_cont .main_cont1 .main_cont2 .part_shadow .main_cont_info .main_cont_title .main_cont_text {
+  @apply grow shrink basis-0 text-white text-[28px] font-["Sora"] leading-[42px] font-semibold;
+}
+.main_cont .main_cont1 .main_cont2 .part_shadow .main_cont_info .main_cont_desc {
+  @apply self-stretch h-[228px] p-[20px] bg-[#0F0F0F] rounded-[20px] border border-stone-900 flex-col justify-start items-start gap-3.5 flex;
+}
+.main_cont .main_cont1 .main_cont2 .part_shadow .main_cont_info .main_cont_desc .main_cont_desc_title {
+  @apply self-stretch text-white text-[22px] font-["Sora"] leading-[33px] font-normal;
+}
+.main_cont .main_cont1 .main_cont2 .part_shadow .main_cont_info .main_cont_desc .main_cont_desc_text {
+  @apply self-stretch text-neutral-400 text-lg font-["Sora"] leading-[27px] font-normal;
+}
+
+/*# sourceMappingURL=partner.module.css.map */

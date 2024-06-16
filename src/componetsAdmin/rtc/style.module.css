@@ -1,0 +1,8 @@
+.main {
+  @apply max-w-full  sm:max-w-[600px] sm:ml-[215px] xl:max-w-[900px] xl:ml-[15px] mt-[15px] bg-white rounded-[15px] p-2 mx-auto;
+}
+.main button {
+  @apply text-2xl;
+}
+
+/*# sourceMappingURL=style.module.css.map */

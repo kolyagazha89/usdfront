@@ -1,0 +1,59 @@
+footer {
+  @apply w-full h-full flex-col justify-start items-start gap-10 inline-flex mx-auto;
+}
+
+.first_foot {
+  @apply self-stretch pb-[30px] border-b border-stone-900 justify-between items-center inline-flex;
+}
+.first_foot img {
+  @apply w-[129px] h-fit;
+}
+.first_foot .social {
+  @apply justify-start items-center gap-5 flex;
+}
+.first_foot .social .text_social {
+  @apply text-white text-lg font-normal font-["Sora"] leading-normal;
+}
+.first_foot .social .icons {
+  @apply justify-start items-start gap-3.5 flex;
+}
+.first_foot .social .icons .icon {
+  @apply p-3 bg-gradient-to-t from-zinc-950 to-zinc-900 rounded-[66px] border border-neutral-800 justify-start items-start gap-2.5 flex;
+}
+.first_foot .social .icons .icon img {
+  @apply w-[29px] rounded-[10px] h-7;
+}
+
+.second_foot {
+  @apply w-full h-[324px] justify-start items-start gap-[60px] inline-flex;
+}
+.second_foot .component_foot {
+  @apply grow shrink basis-0 flex-col justify-start items-start gap-6 inline-flex;
+}
+.second_foot .component_foot .title_text {
+  @apply self-stretch text-white text-lg font-["Sora"] leading-[27px] font-semibold;
+}
+.second_foot .component_foot .main_text {
+  @apply self-stretch h-[109px] flex-col justify-start items-start gap-3.5 flex;
+}
+.second_foot .component_foot .main_text .ul_text {
+  @apply self-stretch text-zinc-500 text-lg font-normal font-["Sora"] leading-[27px] transition;
+}
+.second_foot .component_foot .main_text .ul_text:hover {
+  @apply text-gray-300 transition duration-300;
+}
+
+.third_foot {
+  @apply self-stretch py-[30px] border-t border-stone-900 justify-between items-center inline-flex;
+}
+.third_foot .first_text {
+  @apply text-stone-500 text-lg font-light font-["Sora"] leading-normal;
+}
+.third_foot .second_text {
+  @apply justify-start items-start gap-5 flex;
+}
+.third_foot .second_text .third_foot_text {
+  @apply text-stone-500 text-lg font-light font-["Sora"] leading-normal;
+}
+
+/*# sourceMappingURL=footer.module.css.map */

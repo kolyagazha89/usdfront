@@ -1,0 +1,21 @@
+.main_cont{
+  @apply w-[1596px] flex-col justify-start items-start gap-4 pb-5 inline-flex mt-0 ;
+  .cont_zag{
+    @apply self-stretch h-[72px] px-[250px] flex-col justify-start items-start gap-5 flex;
+    div{
+      @apply self-stretch text-center text-white text-5xl font-['Sora'] leading-[72px] font-semibold ;
+    }
+  }
+  .cont_rules{
+    @apply self-stretch  flex-col justify-center items-center gap-5 flex;
+    .cont_rule{
+      @apply self-stretch  px-10 py-5 rounded-[20px] border border-stone-900 flex-col justify-center items-start gap-2.5 flex;
+      .cont_rule_zag{
+        @apply text-left text-white text-2xl font-semibold font-['Sora'] leading-9;
+      }
+      .cont_rule_text{
+        @apply self-stretch text-justify text-white text-xl  font-light font-['Sora'] leading-[30px] tracking-wide;
+      }
+    }
+  }
+}

@@ -1,0 +1,116 @@
+.main_news {
+  @apply w-full py-5 flex-col justify-start items-start gap-20 inline-flex;
+}
+.main_news .title {
+  @apply m-auto;
+}
+.main_news .title .title_text {
+  @apply self-stretch text-center text-white text-5xl font-["Sora"] leading-[72px] font-semibold;
+}
+.main_news .title .title_desc {
+  @apply self-stretch text-center text-zinc-500 text-lg font-["Sora"] leading-[27px] font-normal;
+}
+.main_news .news {
+  @apply w-[1164px] h-full flex-col justify-start items-start gap-[30px] flex mx-auto;
+}
+.main_news .news .news_1 {
+  @apply h-full flex-col justify-start items-start gap-[30px] flex;
+}
+.main_news .news .news_1 .news_main {
+  @apply self-stretch h-[792px] px-20 pt-[120px] pb-20 rounded-[40px] border-2 border-neutral-900 backdrop-blur-md flex-col justify-center items-center gap-[50px] flex;
+}
+.main_news .news .news_1 .news_main .news_main_1 {
+  @apply p-5 bg-gradient-to-b from-zinc-900 to-zinc-900 rounded-[100px] border-2 border-zinc-800 justify-center items-center gap-2.5 inline-flex;
+}
+.main_news .news .news_1 .news_main .news_main_1 .news_main_2 {
+  @apply p-6 bg-gradient-to-b from-zinc-900 to-zinc-900 rounded-[100px] border-2 border-zinc-800 justify-center items-center gap-2.5 flex;
+}
+.main_news .news .news_1 .news_main .news_main_1 .news_main_2 .news_main_3 {
+  @apply p-5 bg-gradient-to-b from-zinc-900 to-zinc-900 rounded-[75px] border-2 border-zinc-800 justify-start items-start gap-2.5 flex;
+}
+.main_news .news .news_1 .title_news {
+  @apply self-stretch h-[254px] flex-col justify-start items-center gap-5 flex;
+}
+.main_news .news .news_1 .title_news .title_text {
+  @apply self-stretch text-center text-white text-4xl font-["Sora"] leading-[54px] font-semibold;
+}
+.main_news .news .news_1 .title_news .title_desc {
+  @apply self-stretch text-center text-stone-300 text-2xl font-normal font-["Sora"] leading-9;
+}
+.main_news .news .news_1 .btn_news {
+  @apply px-6 py-[18px] bg-zinc-900 rounded-[74px] border border-neutral-800 justify-center items-center gap-1.5 inline-flex transition;
+}
+.main_news .news .news_1 .btn_news .btn_text {
+  @apply text-center text-white text-xl font-normal font-["Sora"] leading-[30px] transition;
+}
+.main_news .news .news_1 .btn_news .btn_ {
+  @apply w-7 h-7 relative;
+}
+.main_news .news .news_1 .btn_news:hover {
+  @apply bg-zinc-800 text-zinc-200 transition-transform scale-110  ease-in-out duration-500;
+}
+.main_news .news .news_1 .btn_news:hover .btn_text {
+  @apply text-zinc-500 transition scale-110  ease-in-out duration-500;
+}
+.main_news .news .litle_news {
+  @apply self-stretch h-full flex-col justify-start items-center gap-10 flex;
+}
+.main_news .news .litle_news .litle_news_1 {
+  @apply self-stretch justify-center items-center gap-10 inline-flex flex-wrap;
+}
+.main_news .news .litle_news .litle_news_1 .litle_news_2 {
+  @apply w-[562px] px-5 pt-5 pb-[30px] rounded-[20px] border border-[#1F1F1F] flex-col justify-start items-center gap-6 inline-flex;
+}
+.main_news .news .litle_news .litle_news_1 .litle_news_2 .litle_news_photo {
+  @apply self-stretch h-[337px] rounded-[20px] border border-stone-900 justify-center items-center inline-flex;
+}
+.main_news .news .litle_news .litle_news_1 .litle_news_2 .litle_news_photo img {
+  @apply w-[540px] h-[335px] rounded-2xl;
+}
+.main_news .news .litle_news .litle_news_1 .litle_news_2 .litle_news_pub {
+  @apply self-stretch justify-start items-center inline-flex;
+}
+.main_news .news .litle_news .litle_news_1 .litle_news_2 .litle_news_pub .litle_news_pub_man {
+  @apply grow shrink basis-0 h-[50px] justify-start items-center gap-2 flex;
+}
+.main_news .news .litle_news .litle_news_1 .litle_news_2 .litle_news_pub .litle_news_pub_man img {
+  @apply w-[50px] h-[50px] rounded-full;
+}
+.main_news .news .litle_news .litle_news_1 .litle_news_2 .litle_news_pub .litle_news_pub_man .litle_news_pub_text {
+  @apply grow shrink basis-0 text-white text-base font-normal font-["Sora"] leading-normal;
+}
+.main_news .news .litle_news .litle_news_1 .litle_news_2 .litle_news_pub .litle_news_data {
+  @apply justify-start items-center gap-2 flex;
+}
+.main_news .news .litle_news .litle_news_1 .litle_news_2 .litle_news_pub .litle_news_data .litle_news_data1 {
+  @apply px-3.5 py-2.5 rounded-[100px] border border-stone-900 justify-start items-center gap-2.5 flex;
+}
+.main_news .news .litle_news .litle_news_1 .litle_news_2 .litle_news_pub .litle_news_data .litle_news_data1 .litle_news_data_icon {
+  @apply w-5 h-5 relative;
+}
+.main_news .news .litle_news .litle_news_1 .litle_news_2 .litle_news_pub .litle_news_data .litle_news_data1 .litle_news_data_text {
+  @apply text-neutral-400 text-base font-normal font-["Sora"] leading-normal;
+}
+.main_news .news .litle_news .litle_news_1 .litle_news_2 .litle_news_title {
+  @apply self-stretch h-[89px] flex-col justify-start items-start gap-3.5 flex;
+}
+.main_news .news .litle_news .litle_news_1 .litle_news_2 .litle_news_title .litle_news_title_text {
+  @apply self-stretch text-white text-lg font-["Sora"] leading-[27px] font-semibold;
+}
+.main_news .news .litle_news .litle_news_1 .litle_news_2 .litle_news_title .litle_news_title_desc {
+  @apply self-stretch text-stone-300 text-base font-normal font-["Sora"] leading-normal;
+}
+.main_news .news .litle_news .litle_news_1 .litle_news_2 .litle_news_btn {
+  @apply px-6 py-3.5 bg-zinc-900 rounded-[74px] border border-neutral-800 justify-center items-center gap-2.5 inline-flex transition;
+}
+.main_news .news .litle_news .litle_news_1 .litle_news_2 .litle_news_btn .litle_news_btn_text {
+  @apply text-white text-sm font-normal font-["Sora"] leading-[21px] transition;
+}
+.main_news .news .litle_news .litle_news_1 .litle_news_2 .litle_news_btn:hover {
+  @apply bg-zinc-800 transition-transform scale-110  ease-in-out duration-500;
+}
+.main_news .news .litle_news .litle_news_1 .litle_news_2 .litle_news_btn:hover .litle_news_btn_text {
+  @apply text-zinc-200 transition scale-110  ease-in-out duration-500;
+}
+
+/*# sourceMappingURL=news.module.css.map */

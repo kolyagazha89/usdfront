@@ -1,0 +1,22 @@
+.main {
+  @apply w-[250px] h-fit sm:hidden xl:flex px-1 py-6 bg-white flex rounded-[14px] flex-col justify-center items-center gap-2.5  ml-[215px] mt-[15px];
+}
+.main .linkCont {
+  @apply px-8 py-2 justify-start items-center gap-2.5 inline-flex rounded-[7px];
+}
+.main .linkCont .link {
+  @apply w-[138px] h-[18px] text-black text-sm font-medium font-["Roboto"] leading-[21px] tracking-tight;
+}
+
+.linkCont:hover {
+  @apply bg-blue-100;
+}
+
+.linkContTemp {
+  @apply px-8 py-2 justify-start items-center bg-blue-100 gap-2.5 inline-flex rounded-[7px];
+}
+.linkContTemp .link {
+  @apply w-[138px] h-[18px] text-blue-600 text-sm font-medium font-["Roboto"] leading-[21px] tracking-tight;
+}
+
+/*# sourceMappingURL=menu.module.css.map */

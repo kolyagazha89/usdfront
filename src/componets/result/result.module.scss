@@ -1,0 +1,64 @@
+.main_cont{
+  @apply w-[1596px]  py-5 flex-col justify-start items-center inline-flex;
+  .main_cont2{
+    @apply self-stretch  px-[135px] rounded-[20px] border border-stone-900 pb-5 flex-col justify-start items-start gap-[30px] flex;
+    .main_cont3{
+      @apply self-stretch  p-[50px]  flex-col justify-start items-start gap-[50px] flex;
+      .main_cont4{
+        @apply self-stretch  flex-col justify-start items-start gap-[50px] flex;
+        .main_cont5{
+          @apply self-stretch  flex-col justify-center items-center gap-5 flex;
+          .query{
+            @apply self-stretch justify-center items-center gap-[100px] inline-flex ;
+            .main_query{
+              @apply w-[260px] h-[65px] pl-4 pr-4 py-4 bg-[#0F0F0F] rounded-[15px] flex-col justify-center items-start gap-6 inline-flex;
+              .main_query2{
+                @apply self-stretch justify-start items-center gap-6 inline-flex;
+                .main_query3{
+                  @apply grow shrink basis-0 flex-col justify-start items-start gap-0.5 inline-flex;
+                  .query_text{
+                    @apply opacity-50 text-white text-lg font-['Raleway'] pl-[5px] font-bold  ;
+                  }
+                  select{
+                    @apply text-white bg-[#0F0F0F] text-xl font-['Raleway'] font-medium w-full ;
+                  }
+                }
+              }
+            }
+            .query_btn{
+              @apply w-[178px] h-[65px] px-8 py-4 bg-[#0F0F0F] rounded-[15px] justify-center items-center gap-2.5 flex;
+              button{
+                @apply text-white text-xl font-bold font-['Inter'] uppercase;
+              }
+            }
+          }
+          .query_info{
+            @apply animate-ani;
+            @keyframes ani {
+              0% {
+                transform: translateY(-3%);
+                opacity: 0;
+              }
+
+              100% {
+                transform: translateY(0);
+              }
+            }
+            .query_text{
+              @apply text-center text-white text-[32px] font-semibold font-['Inter'] tracking-wider;
+            }
+            .query_table{
+              @apply rounded-[20px] flex-col justify-center items-center flex;
+              .table_border{
+                @apply bg-neutral-900 rounded-[20px] border border-zinc-600 flex-col justify-center items-center flex;
+                .table_tr{
+                  @apply self-stretch  justify-center items-center inline-flex;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

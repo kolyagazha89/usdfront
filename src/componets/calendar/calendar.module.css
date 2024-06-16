@@ -1,0 +1,202 @@
+.main_cont {
+  @apply w-[1594px] h-fit py-5 flex-col justify-start items-center inline-flex px-[135px] mt-5;
+}
+.main_cont .main_cont1 {
+  @apply self-stretch grow shrink basis-0  pb-5 flex-col justify-start items-start gap-[30px] flex;
+}
+.main_cont .main_cont1 .main_shadow {
+  @apply self-stretch h-fit px-[50px] pt-[50px] rounded-[20px] border border-stone-900 flex-col justify-start items-start gap-[50px] flex;
+}
+.main_cont .main_cont1 .main_shadow .afisha_img {
+  @apply w-[1226px] h-[696px] bg-gradient-to-b from-black to-black rounded-[20px] border border-black;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont {
+  @apply self-stretch h-fit flex-col justify-start items-start flex;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cal_cont1 {
+  @apply self-stretch h-[173px] flex-col justify-start items-start gap-5 flex;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cal_cont1 .prim_cont {
+  @apply self-stretch justify-start items-start gap-2.5 inline-flex;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cal_cont1 .prim_cont .prim {
+  @apply px-[18px] py-3.5 rounded-[100px] border border-stone-900 justify-start items-center gap-2.5 flex;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cal_cont1 .prim_cont .prim .prim_text {
+  @apply text-neutral-400 text-lg font-["Sora"] leading-[27px] font-normal;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cal_cont1 .cont_info {
+  @apply w-[1200px] justify-between items-center inline-flex;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cal_cont1 .cont_info .cont_info1 {
+  @apply px-[15px] py-[19px] justify-start items-center gap-[50px] flex;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cal_cont1 .cont_info .cont_info1 .cont_info_name {
+  @apply text-white text-[28px] font-["Sora"] leading-[42px] font-semibold;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cal_cont1 .cont_info .cont_info1 .cont_info_reg {
+  @apply w-[300px] h-[60px] flex items-center  justify-center bg-black rounded-[30px] border border-white;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cal_cont1 .cont_info .cont_info1 .cont_info_reg .cont_info_reg_btn {
+  @apply text-center text-white text-xl font-["Roboto"] font-normal;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cal_cont1 .cont_info .cont_info1 .cont_info_reg:hover {
+  @apply border-red-500 transition duration-500;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cal_cont1 .cont_info .cont_info1 .cont_info_reg:hover .cont_info_reg_btn {
+  @apply text-red-500 transition duration-500 scale-110;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cal_cont1 .cont_info .cont_info1 .cont_info_list {
+  @apply text-center text-zinc-400 text-xl font-light font-["Sora"] underline leading-[30px] tracking-wide;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cal_cont1 .cont_info .cont_info1 .cont_info_list:hover {
+  @apply text-zinc-200 transform scale-105;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cal_cont1 .cont_info .cont_info_btn_close {
+  @apply justify-start items-center gap-3.5 flex;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cal_cont1 .cont_info .cont_info_btn_close .cont_info_btn_close_text {
+  @apply text-stone-300 text-lg font-["Sora"] leading-[27px] font-normal;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cal_cont1 .cont_info .cont_info_btn_close .cont_info_btn_close_text:hover {
+  @apply text-stone-50 transform scale-105;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cont_desc {
+  @apply self-stretch h-fit p-[50px] bg-[#0F0F0F] rounded-[20px] border border-[#1F1F1F] flex-col justify-start mb-[50px] items-start gap-[50px] mt-[25px] flex animate-ani;
+}
+@keyframes ani {
+  0% {
+    transform: translateY(-3%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cont_desc .cont_desc1 {
+  @apply self-stretch h-fit flex-col justify-center items-center gap-3.5 flex;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cont_desc .cont_desc1 .cont_desc_name {
+  @apply self-stretch text-white text-[22px] font-["Sora"] leading-[33px] font-normal;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cont_desc .cont_desc1 .cont_desc_desc {
+  @apply self-stretch text-neutral-400 text-lg font-["Sora"] leading-[27px] font-normal;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cont_desc .full_desc {
+  @apply self-stretch h-full flex-col justify-start items-start gap-[30px] flex;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cont_desc .full_desc .full_desc_cont {
+  @apply self-stretch px-[50px] py-[30px] rounded-xl border border-stone-900 justify-center items-center gap-[50px] inline-flex;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cont_desc .full_desc .full_desc_cont .full_desc_info {
+  @apply grow shrink basis-0 border-gradient-b-border-record-gray-900 border-transparent border-solid border-r-[1px] flex-col justify-start items-start gap-1.5 inline-flex;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cont_desc .full_desc .full_desc_cont .full_desc_info .full_desc_info_key {
+  @apply self-stretch text-neutral-400 text-lg font-["Sora"] leading-[27px] font-normal;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cont_desc .full_desc .full_desc_cont .full_desc_info .full_desc_info_value {
+  @apply self-stretch text-white text-xl font-["Sora"] leading-[30px] font-normal;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cont_desc .full_desc .full_desc_cont .full_desc_info_last {
+  @apply grow shrink basis-0 flex-col justify-start items-start gap-1.5 inline-flex;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cont_desc .full_desc .full_desc_cont .full_desc_info_last .full_desc_info_key {
+  @apply self-stretch text-neutral-400 text-lg font-["Sora"] leading-[27px] font-normal;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cont_desc .full_desc .full_desc_cont .full_desc_info_last .full_desc_info_value {
+  @apply self-stretch text-white text-xl font-["Sora"] leading-[30px] font-normal;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cont_desc .full_desc .info_part {
+  @apply self-stretch h-full p-[50px] rounded-[20px] border border-stone-900 flex-col justify-center items-start gap-[30px] flex;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cont_desc .full_desc .info_part .info_part_text {
+  @apply self-stretch text-white text-xl font-["Sora"] leading-[30px] font-normal;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cont_desc .full_desc .info_part .info_part_cont {
+  @apply self-stretch justify-start items-start gap-[26px] inline-flex flex-wrap;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cont_desc .full_desc .info_part .info_part_cont .info_part_cont_shadow {
+  @apply w-[322px] h-[120px] p-[30px] rounded-[20px] border border-stone-900 flex-col justify-start items-start gap-5 inline-flex;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cont_desc .full_desc .info_part .info_part_cont .info_part_cont_shadow .info_part_elem {
+  @apply self-stretch justify-start items-center gap-1.5 inline-flex;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cont_desc .full_desc .info_part .info_part_cont .info_part_cont_shadow .info_part_elem .info_part_img {
+  @apply justify-start items-center flex;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cont_desc .full_desc .info_part .info_part_cont .info_part_cont_shadow .info_part_elem .info_part_img img {
+  @apply w-[60px] h-[60px] rounded-full;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cont_desc .full_desc .info_part .info_part_cont .info_part_cont_shadow .info_part_elem .info_part_name {
+  @apply grow shrink basis-0 text-white text-lg font-["Sora"] leading-[27px] font-normal;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cont_desc_hide {
+  @apply p-[50px] bg-[#0F0F0F] rounded-[20px]  border border-[#1F1F1F] flex-col justify-start items-start gap-[50px] flex animate-out;
+}
+@keyframes out {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    height: 0;
+    border: none;
+    opacity: 0;
+    display: none;
+    transform: translateY(-3%);
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cont_desc_hide .cont_desc1 {
+  @apply self-stretch h-fit flex-col justify-center items-center gap-3.5 flex;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cont_desc_hide .cont_desc1 .cont_desc_name {
+  @apply self-stretch text-white text-[22px] font-["Sora"] leading-[33px] font-normal;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cont_desc_hide .cont_desc1 .cont_desc_desc {
+  @apply self-stretch text-neutral-400 text-lg font-["Sora"] leading-[27px] font-normal;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cont_desc_hide .full_desc {
+  @apply self-stretch h-full flex-col justify-start items-start gap-[30px] flex;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cont_desc_hide .full_desc .full_desc_cont {
+  @apply self-stretch px-[50px] py-[30px] rounded-xl border border-stone-900 justify-center items-center gap-[50px] inline-flex;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cont_desc_hide .full_desc .full_desc_cont .full_desc_info {
+  @apply grow shrink basis-0 border-r border-zinc-500 flex-col justify-start items-start gap-1.5 inline-flex;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cont_desc_hide .full_desc .full_desc_cont .full_desc_info .full_desc_info_key {
+  @apply self-stretch text-neutral-400 text-lg font-["Sora"] leading-[27px] font-normal;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cont_desc_hide .full_desc .full_desc_cont .full_desc_info .full_desc_info_value {
+  @apply self-stretch text-white text-xl font-["Sora"] leading-[30px] font-normal;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cont_desc_hide .full_desc .info_part {
+  @apply self-stretch h-full p-[50px] rounded-[20px] border border-stone-900 flex-col justify-center items-start gap-[30px] flex;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cont_desc_hide .full_desc .info_part .info_part_text {
+  @apply self-stretch text-white text-xl font-["Sora"] leading-[30px] font-normal;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cont_desc_hide .full_desc .info_part .info_part_cont {
+  @apply self-stretch justify-start items-start gap-[26px] inline-flex flex-wrap;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cont_desc_hide .full_desc .info_part .info_part_cont .info_part_cont_shadow {
+  @apply w-[322px] h-[120px] p-[30px] rounded-[20px] border border-stone-900 flex-col justify-start items-start gap-5 inline-flex;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cont_desc_hide .full_desc .info_part .info_part_cont .info_part_cont_shadow .info_part_elem {
+  @apply self-stretch justify-start items-center gap-1.5 inline-flex;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cont_desc_hide .full_desc .info_part .info_part_cont .info_part_cont_shadow .info_part_elem .info_part_img {
+  @apply justify-start items-center flex;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cont_desc_hide .full_desc .info_part .info_part_cont .info_part_cont_shadow .info_part_elem .info_part_img img {
+  @apply w-[60px] h-[60px] rounded-full;
+}
+.main_cont .main_cont1 .main_shadow .cal_cont .cont_desc_hide .full_desc .info_part .info_part_cont .info_part_cont_shadow .info_part_elem .info_part_name {
+  @apply grow shrink basis-0 text-white text-lg font-["Sora"] leading-[27px] font-normal;
+}
+
+/*# sourceMappingURL=calendar.module.css.map */

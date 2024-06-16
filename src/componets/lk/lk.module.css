@@ -1,0 +1,74 @@
+.main_cont {
+  @apply w-[1594px] flex-col justify-center items-center gap-[30px] inline-flex mb-5;
+}
+.main_cont .cont_info {
+  @apply justify-center items-center gap-[55px] inline-flex;
+}
+.main_cont .cont_info .cont_info_img {
+  @apply w-[300px] h-[356px] relative;
+}
+.main_cont .cont_info .cont_info_img .cont_info_border {
+  @apply w-[300px] h-[300px] left-0 top-[37px] absolute rounded-full border-gradient-t-border-img-black border-transparent border-solid border-4;
+}
+.main_cont .cont_info .cont_info_img .cont_infoImg {
+  @apply w-[210px] h-[210px] left-[45px] top-[82px] absolute;
+}
+.main_cont .cont_info .cont_info_img .cont_infoImg .img_pers {
+  @apply w-[210px] h-[210px]  rounded-full;
+}
+.main_cont .cont_info .cont_info_img .cont_infoImg .img_border {
+  @apply w-[210px] h-[210px] rounded-full border-0;
+}
+.main_cont .cont_info .cont_personal {
+  @apply h-[52px] flex-col justify-start items-start inline-flex;
+}
+.main_cont .cont_info .cont_personal .cont_personal_name {
+  @apply justify-items-start items-start gap-5 inline-flex;
+}
+.main_cont .cont_info .cont_personal .cont_personal_name .name {
+  @apply outline-0 text-white bg-black text-[35px] font-["Roboto"] leading-[52px] font-bold;
+}
+.main_cont .cont_info .cont_personal .cont_personal_name .ref {
+  @apply text-neutral-500 text-xl font-bold font-["Roboto"] leading-[52px] underline;
+}
+.main_cont .cont_info .team {
+  @apply justify-center items-center gap-2.5 inline-flex;
+}
+.main_cont .cont_info .team img {
+  @apply w-[35px] h-fit;
+}
+.main_cont .cont_info .team .team_name {
+  @apply outline-0 bg-black text-white text-xl font-["Roboto"] leading-[52px] font-light;
+}
+.main_cont .cont_vizit {
+  @apply flex-col justify-start items-center gap-[50px] flex;
+}
+.main_cont .cont_vizit .zag {
+  @apply text-white text-5xl font-["Roboto"] leading-[80px] font-extrabold;
+}
+.main_cont .cont_vizit .cont_vizit_spin {
+  @apply w-[1250px] shadow-inner justify-center items-center gap-[30px] inline-flex;
+}
+.main_cont .cont_vizit .cont_vizit_spin .main_vizit {
+  @apply px-[15px] py-[15px] bg-neutral-900 rounded-tl-[150px] rounded-tr-[60px] rounded-bl-[60px] rounded-br-[60px] shadow-inner border border-[#171717] flex-col justify-center items-center gap-[30px] inline-flex;
+}
+.main_cont .cont_vizit .cont_vizit_spin .main_vizit .vizit_head {
+  @apply w-[250px]  text-center whitespace-pre-wrap text-white text-[20px] font-["Roboto"] leading-[20px] font-extrabold;
+}
+.main_cont .cont_vizit .cont_vizit_spin .main_vizit .vizit_first {
+  @apply w-[271px] text-center whitespace-pre-wrap py-2.5 text-yellow-500 text-[20px] font-extrabold font-["Roboto"] leading-[50px] border-gradient-r-border-record-vizit border-transparent border-solid border-y-2;
+}
+.main_cont .cont_vizit .cont_vizit_spin .main_vizit .vizit_second {
+  @apply w-[271px] text-center whitespace-pre-wrap py-2.5 text-zinc-600 text-[20px] font-extrabold font-["Roboto"] leading-[50px] border-gradient-r-border-record-vizit border-transparent border-solid border-y-2;
+}
+.main_cont .cont_vizit .cont_vizit_spin .main_vizit .vizit_third {
+  @apply w-[271px] text-center whitespace-pre-wrap py-2.5 text-amber-600 text-[20px] font-extrabold font-["Roboto"] leading-[50px] border-gradient-r-border-record-vizit border-transparent border-solid border-y-2;
+}
+.main_cont .cont_vizit .cont_vizit_spin .main_vizit .vizit_other {
+  @apply w-[271px] text-center whitespace-pre-wrap py-2.5 text-white text-[20px] font-extrabold font-["Roboto"] leading-[50px] border-gradient-r-border-record-vizit border-transparent border-solid border-y-2;
+}
+.main_cont .cont_vizit .cont_vizit_spin .main_vizit .vizit_res {
+  @apply w-[271px]  text-center text-white text-[20px] font-extrabold font-["Roboto"] leading-10;
+}
+
+/*# sourceMappingURL=lk.module.css.map */

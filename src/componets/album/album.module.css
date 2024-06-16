@@ -1,0 +1,47 @@
+.main_cont {
+  @apply w-[1596px] h-fit self-stretch  px-[135px] py-5 pb-5 flex-col justify-start items-start gap-[30px] flex;
+}
+.main_cont .cont_shadow {
+  @apply self-stretch h-fit p-[50px] pt-[30px] rounded-[20px] border border-stone-900 flex-col justify-start items-start gap-[50px] flex;
+}
+.main_cont .cont_shadow .cont_flex {
+  @apply self-stretch h-fit flex-col justify-center items-center gap-[30px] flex;
+}
+.main_cont .cont_shadow .cont_flex .query_text {
+  @apply text-center text-white text-[32px] font-semibold font-["Inter"] tracking-wider;
+}
+.main_cont .cont_shadow .cont_flex .cont_query {
+  @apply self-stretch justify-center items-center gap-[50px] inline-flex;
+}
+.main_cont .cont_shadow .cont_flex .query_button {
+  @apply h-[65px] px-8 py-4 bg-[#0F0F0F] rounded-[15px] justify-center items-center gap-2.5 flex;
+}
+.main_cont .cont_shadow .cont_flex .query_button button {
+  @apply text-white text-xl font-bold font-["Inter"] uppercase;
+}
+.main_cont .cont_shadow .cont_flex .query_button p {
+  @apply text-white text-xl font-bold font-["Inter"] uppercase;
+}
+.main_cont .cont_shadow .cont_flex .cont_img_animated {
+  @apply animate-ani;
+}
+@keyframes ani {
+  0% {
+    transform: translateY(-3%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.main_cont .cont_shadow .cont_flex .cont_img_animated .cont_img {
+  @apply w-[1225.76px] justify-center flex-wrap items-center gap-[22px] inline-flex;
+}
+.main_cont .cont_shadow .cont_flex .cont_img_animated .cont_img .box_img {
+  @apply w-[289.94px] h-[289.94px] relative rounded-[20px] border-2 border-zinc-800;
+}
+.main_cont .cont_shadow .cont_flex .cont_img_animated .cont_img .box_img img {
+  @apply w-[289.94px] h-[289.94px] left-0 top-0 absolute rounded-[20px] border border-neutral-400;
+}
+
+/*# sourceMappingURL=album.module.css.map */
