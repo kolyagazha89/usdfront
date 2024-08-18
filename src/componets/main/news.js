@@ -1,10 +1,18 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import style from "./news.module.scss"
 import LitleNews from "./litle_news";
 import MainNews from "./main_news";
-import news from "../../img/news.jpg"
-import ava from "../../img/ava.jpg"
+import axios from "axios";
 const News = () => {
+    const [news, setNews]=useState([])
+    useEffect(() => {
+        axios.get('http://localhost:8000/news/').then((res)=>setNews(res.data))
+    }, []);
+    const formatDate = (dateStr) => {
+        const [year, month, day] = dateStr.split('-');
+        let newDate = `${day}.${month}.${year}`;
+        return newDate;
+    };
     return (
         <div className={style.main_news}>
             <div className={style.title}>
@@ -21,37 +29,17 @@ const News = () => {
                     ]}/>
                     <div className={style.litle_news}>
                         <div className={style.litle_news_1}>
+                            {news.map(i=>
                             <LitleNews data={[
-                                "Димон Динов",
-                                "Сентбярь 2023",
-                                "Завершение сезона 2023",
-                                "Ну вот и завершился сезон 2023. Финал состоялся по истине фееричный. Мы обещали,\n" +
-                                "что это, будет САМЫЙ КРУТОЙ ФИНАЛ....",
-                                "/news",
-                                news,
-                                ava
+                                i.username,
+                                formatDate(i.date_news),
+                                i.name_news,
+                                i.text_news,
+                                `/news/${i.id_news}`,
+                                i.photo_news,
+                                i.photo
                             ]}/>
-                            <LitleNews data={[
-                                "Димон Динов",
-                                "Сентбярь 2023",
-                                "Завершение сезона 2023",
-                                "Ну вот и завершился сезон 2023. Финал состоялся по истине фееричный. Мы обещали,\n" +
-                                "что это, будет САМЫЙ КРУТОЙ ФИНАЛ....",
-                                "/news",
-                                news,
-                                ava
-                            ]}/>
-                            <LitleNews data={[
-                                "Димон Динов",
-                                "Сентбярь 2023",
-                                "Завершение сезона 2023",
-                                "Ну вот и завершился сезон 2023. Финал состоялся по истине фееричный. Мы обещали,\n" +
-                                "что это, будет САМЫЙ КРУТОЙ ФИНАЛ....",
-                                "/news",
-                                news,
-                                ava
-                            ]}/>
-
+                            )}
                         </div>
                     </div>
                 </div>

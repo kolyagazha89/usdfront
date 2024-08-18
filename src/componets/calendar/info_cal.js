@@ -1,6 +1,11 @@
 import React from 'react';
 import style from "./calendar.module.scss"
 const InfoCal = ({data}) => {
+    const formatDate = (dateStr) => {
+        const [year, month, day] = dateStr.split('-');
+        let newDate = `${day}.${month}.${year}`;
+        return newDate;
+    };
     return (
         <div className={style.full_desc_cont}>
             <div className={style.full_desc_info}>
@@ -18,7 +23,7 @@ const InfoCal = ({data}) => {
             <div className={style.full_desc_info}>
                 <div className={style.full_desc_info_key}>Дата проведения
                 </div>
-                <div className={style.full_desc_info_value}>{data[2]}
+                <div className={style.full_desc_info_value}>{formatDate(data[2])}
                 </div>
             </div>
             <div className={style.full_desc_info_last}>

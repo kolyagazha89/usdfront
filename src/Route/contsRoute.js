@@ -19,6 +19,7 @@ import Register from "../componets/calendar/register";
 import Newss from "../componetsAdmin/news/news"
 import React from "react";
 import MainRtc from "../componetsAdmin/rtc/mainRtc";
+import NewsElem from "../componetsAdmin/news/newsElem";
 
 export const ROUTING= [
     { path:"/",component:<Main/>},
@@ -29,7 +30,7 @@ export const ROUTING= [
     { path:"/partners",component:<Partners/>},
     { path:"/rules",component:<Rules/>},
     { path:"/live",component:<Live/>},
-    { path:"/news",component:<News/>},
+    { path:"/news/:id",component:<News/>},
     { path:"/sportmens",component:<Sportmens/>},
     { path:"/lk",component:<Lk/>},
     { path:"/lk/changeprofile",component:<ChangeProfile/>},
@@ -37,11 +38,17 @@ export const ROUTING= [
 ]
 export const ROUTINGADMIN=[
     {path: "/admin/main", component:<MainAdmin/>},
+
     {path: "/admin/stage", component:<Stages/>},
     {path: "/admin/stage/add", component:<StageElem/>},
     {path: `/admin/stage/add/:id`, component:<StageElem/>},
+
     {path: "/admin/partner", component:<PartnersAdmin/>},
     {path: "/admin/partner/np", component:<NewsPart/>},
+
     {path: "/admin/news", component:<Newss/>},
+    {path: `/admin/news/add`, component:<NewsElem/>},
+    {path: `/admin/news/add/:id`, component:<NewsElem/>},
+
     {path: "/admin/rtc", component:<MainRtc/>},
 ]

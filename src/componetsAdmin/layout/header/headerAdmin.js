@@ -14,16 +14,16 @@ const HeaderAdmin = () => {
     }, []);
     return (
         <div
-            className="w-[1440px]  h-16 px-[15px] sm:mx-[20px] lg:mx-[200px] bg-white rounded-b-[14px] justify-between items-center gap-[276px] inline-flex mx-[200px]">
+            className="w-[1440px]  h-16 px-[15px] sm:mx-[20px] sm:h-[100px] lg:mx-[200px] bg-white rounded-b-[14px] justify-between items-center gap-[276px] inline-flex mx-[200px]">
             <div className="h-10 justify-start items-center gap-2.5 flex ml-[5px]">
-                <div className="w-10 h-10 ">
-                    <img className="w-[60px] h-10 rounded-full" src={"http://127.0.0.1:8000/img/?path="+user.photo}/>
+                <div className="w-[70px] h-[70px] ">
+                    <img className="w-[150px] h-[70px] rounded-full" src={"http://127.0.0.1:8000/img/?path="+user.photo}/>
                 </div>
                 <div
-                    className="w-[150px] h-[26px] text-black text-xl font-medium font-['Roboto'] leading-[30px] tracking-tight">{user.username}
+                    className="w-[250px] h-[26px] text-black text-[30px] font-medium font-['Roboto'] leading-[30px] tracking-tight">{user.username}
                 </div>
             </div>
-            <Bars3Icon className="size-5"></Bars3Icon>
+            <Bars3Icon className="size-7"></Bars3Icon>
         </div>
     );
 };

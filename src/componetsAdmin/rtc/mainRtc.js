@@ -1,6 +1,7 @@
 import React, {useEffect, useRef, useState} from 'react';
 import axios from "axios";
 import style from './style.module.scss'
+import fake from "./photo_2024-06-16_17-44-52.jpg"
 const MainRtc = () => {
     const [user,setUser]=useState()
     var pc = null;
@@ -113,23 +114,22 @@ const MainRtc = () => {
         }, 500);
     }
     return (
-        <>
-            {!user?
         <div className={style.main}>
-            <button id="start" onClick={start}>Регистрация</button>
-            <div id="media">
-                <video id="video" autoPlay="true" playsInline="true"></video>
+            <div>
+                <p>E768YA89</p>
+                <p>Гажа Николай Николаевич</p>
             </div>
-        </div>:
-
-        <div className={style.main}>
-            <p>Номер:  E796YA89</p>
-            <p>Гажа Николай Николаевич</p>
+            <p>Номер участника: 024</p>
+            <p>Классы участия:</p>
+            <p>BFSPL Wicket 1-6, SPL Sedan</p>
             <p>Марка авто: Лада приора</p>
-            <p>Классы участия: BFSPL Wicket 1-6, SPL Sedan</p>
-            <p></p>
-        </div>}
-        </>
+            <div className=" w-full inline-flex justify-center gap-10">
+                <p className=" text-green-600">Подтвердить</p>
+                <p className="text-blue-700">Изменить</p>
+            </div>
+        </div>
+
+
     );
 }
 

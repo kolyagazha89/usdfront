@@ -1,30 +1,45 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import style from "./news.module.scss"
+import axios from "axios";
+import {useParams} from "react-router-dom";
 const News = () => {
+    const params = useParams()
+    const id=params.id
+    const [news,setNews]=useState([])
     useEffect(() => {
         window.scrollTo(0, 0);
+        axios.get(`http://localhost:8000/news/news/?newsId=${id}`).then((res)=>{
+            setNews(res.data[0])
+        })
     }, []);
+    const formatDate = (dateStr) => {
+        const [year, month, day] = dateStr.split('-');
+        let newDate = `${day}.${month}.${year}`;
+        return newDate;
+    };
     return (
         <div className={style.main_cont}>
             <div className={style.zag}>
-                <div>Завершение сезона 2023
+                <div>{news.name_news}
                 </div>
             </div>
             <div className={style.cont_info_news}>
-                <img src="https://via.placeholder.com/620x750"/>
+                <img className="w-[200px] h-[120px] rounded-[20px]"
+                     src={"http://127.0.0.1:8000/img/?path=" + news.photo_news}/>
                 <div className={style.cont_info_text}>
-                    <div>Ну вот и завершился сезон 2023 Финал состоялся по истине фееричный Мы обещали, что это, будет САМЫЙ КРУТОЙ ФИНАЛ за последние 5 лет точно, может и больше! Так оно и вышло! 152 участника в звуке 250+ машин в целом на площадке       7 РЕКОРДОВ РОССИИ        Самый большой призовой фонд среди всех форматов       География участников растет с каждым годом       Море эмоций которые все очень долго ждали! Все это было в один день! Все это благодаря Вам!!!       Этот год действительно был горячим, начиная от географии проведения, заканчивая результатами! Проделан большой путь и оно того стоило! Спасибо всем Вам, за Вашу поддержку, веру и любовь к формату USD Впереди огромная работа по улучшению правил, которые будут опубликованы в ближайший месяц! Так же предстоит большой труд в подготовке сезона 2024, в этом году мы взяли высокую планку, так что следующий год будет еще круче, ярче, громче! Для этого будут приложены все усилия! Уже в октябре Вы увидите предварительный календарь на сезон 2k24       Отдельная благодарность брендам которые из года в год, поддерживают формат USD Ваша поддержка - это наше общее развитие!       Генеральный партнер Alphard Group Премиальный партнер Партнеры формата  AurA Sound Equipment ACV®AUTO SWAT Car Audio Kicx Oris Electronics AVATAR SPL POWER Спасибо всем организаторам в разных городах нашей большой страны, Вы настоящие львы       Отдельный респект всей команде Sound Force | Автозвукза проделанную работу и многолетнюю дружбу! И лично Роман Галюк за его любовь к автозвуку, вклад в его развитие и за крутой Понтиак       Еще раз, всем Вам, ОГРОМНОЕ СПАСИБО!
+                    <div>{news.text_news}
                     </div>
                 </div>
             </div>
             <div className={style.cont_author}>
                 <div className={style.author_info}>
-                    <img src="https://via.placeholder.com/50x50"/>
-                    <div>Димон Динов</div>
+                    <img className="w-[200px] h-[120px] rounded-[20px]"
+                         src={"http://127.0.0.1:8000/img/?path=" + news.photo}/>
+                    <div>{news.username}</div>
                 </div>
                 <div className={style.author_date}>
                     <div className={style.author_date_border}>
-                        <div>Сентбярь 2023
+                    <div>{formatDate(news.date_news)}
                         </div>
                     </div>
                 </div>
